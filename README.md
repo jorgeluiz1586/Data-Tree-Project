@@ -21,11 +21,11 @@ Esse repositório trata-se do front-end da aplicação feito em React, Typescrip
 - Na raíz do projeto rode o comando "npm install"
 - rode o comando "npx vite --port 3001"
 
-# Ao avaliador técnico esse projeto foi feito corrido porém encontra-se testado e funcionando, o repositório não ficou padrão com vários commit e branches apenas foi feito um único commit porque foi desenvolvido primeiro e o repositório criado posteriormente.
-
 
 ![Captura de tela de 2024-10-30 11-59-03](https://github.com/user-attachments/assets/10f1d40d-b9c7-4b47-9eed-97b8b304377c)
 
 ![Captura de tela de 2024-10-30 11-58-28](https://github.com/user-attachments/assets/c4ee3242-8fc3-4c42-8b50-24e49812fcb0)
 
 Esse projeto é open source
+
+Ao avaliador técnico esse projeto foi feito corrido porém encontra-se testado e funcionando, o repositório não ficou padrão com vários commit e branches apenas foi feito um único commit porque foi desenvolvido primeiro e o repositório criado posteriormente.
