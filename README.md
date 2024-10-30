@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Projeto de árvore de dados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esse projeto cria um árvore de dados que pode ser feito o download em arquivo json e salvo na API que está no repositório https://github.com/jorgeluiz1586/Data-Tree-API-Project.
 
-Currently, two official plugins are available:
+Esse repositório trata-se do front-end da aplicação feito em React, Typescript, Tailwind e foi usado o Bun.js como runtime, esse repositório há um arquivo docker-compose que pode ser usado porém é necessário subi primeiro o container da api, caso use o Bun.js ou Node.js mude no arquivo .env a váriável VITE_API_URL para http://localhost:5000
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Passo para rodar o projeto usando Docker (uma vez que tenha feito up no container da API)
+- entre na raíz do projeto
+- docker-compose up -d --build ou docker compose up -d --build
+- sua aplicação vai funcionar na porta 3001 em localhost
 
-## Expanding the ESLint configuration
+# Passo para rodar o projeto usando Bun.js
+- rode antes o back-end
+- mude a variável VITE_API_URL no .env para http://localhost:5000
+- Na raíz do projeto rode o comando "bun install"
+- rode o comando "bun vite --port 3001"
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Passo para rodar o projeto usando Node.js
+- rode antes o back-end
+- mude a variável VITE_API_URL no .env para http://localhost:5000
+- Na raíz do projeto rode o comando "npm install"
+- rode o comando "npx vite --port 3001"
 
-- Configure the top-level `parserOptions` property like this:
+# Ao avaliador técnico esse projeto foi feito corrido porém encontra-se testado e funcionando, o repositório não ficou padrão com vários commit e branches apenas foi feito um único commit porque foi desenvolvido primeiro e o repositório criado posteriormente.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+![Captura de tela de 2024-10-30 11-59-03](https://github.com/user-attachments/assets/10f1d40d-b9c7-4b47-9eed-97b8b304377c)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+![Captura de tela de 2024-10-30 11-58-28](https://github.com/user-attachments/assets/c4ee3242-8fc3-4c42-8b50-24e49812fcb0)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Esse projeto é open source
